@@ -201,36 +201,31 @@
                 </div>
 
                 <!-- Right Banner Upload/Preview Card -->
-                <div class="lg:col-span-5 relative" id="banner-upload">
-                    <div class="relative rounded-2xl p-1 bg-gradient-to-b from-cyan-500/30 via-purple-500/20 to-transparent shadow-2xl">
-                        <div class="glass-card rounded-2xl p-4 space-y-4">
-                            <div class="flex items-center justify-between border-b border-gray-800 pb-2">
-                                <span class="text-xs font-mono text-cyan-400 font-bold uppercase"><i class="fa-solid fa-file-image mr-1"></i> Project Poster (poster.jpg)</span>
-                                <label class="cursor-pointer px-3 py-1 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 rounded-lg text-xs font-semibold border border-cyan-500/40 transition-colors">
-                                    <i class="fa-solid fa-upload mr-1"></i> Local Preview
-                                    <input type="file" id="posterFileInput" accept="image/*" class="hidden" onchange="handlePosterUpload(event)">
-                                </label>
-                            </div>
-
-                            <div class="tall-poster-frame relative group rounded-xl bg-space-900/80 border border-gray-800 p-1 cursor-pointer" onclick="openModal('posterModal')">
-                                <img id="projectPosterImg" src="poster.jpg" alt="Zomoroda Project Poster" onerror="handleImageError(this)" class="w-full h-auto object-top rounded-lg group-hover:opacity-90 transition-opacity">
-                                <div class="absolute inset-0 bg-space-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                    <span class="px-4 py-2 rounded-lg bg-cyan-500 text-space-900 font-bold text-xs shadow-lg">
-                                        <i class="fa-solid fa-expand mr-1"></i> Expand Full Lightbox
-                                    </span>
-                                </div>
-                            </div>
-
-                            <p class="text-[11px] text-gray-400 text-center font-mono">
-                                <i class="fa-solid fa-circle-info text-cyan-400 mr-1"></i> Automatically loads <code class="text-cyan-300">poster.jpg</code> from site folder.
-                            </p>
+        <!-- Right Banner Upload/Preview Card -->
+        <div class="lg:col-span-5 relative" id="banner-upload">
+            <div class="relative rounded-2xl p-1 bg-gradient-to-b from-cyan-500/30 via-purple-500/20 to-transparent shadow-2xl">
+                <div class="glass-card rounded-2xl p-4 space-y-4">
+                    <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+                        <span class="text-xs font-mono text-cyan-400 font-bold uppercase"><i class="fa-solid fa-file-image mr-1"></i> Technical Poster</span>
+                        <span class="text-[10px] font-mono text-gray-400"><i class="fa-solid fa-expand mr-1"></i> Click to enlarge</span>
+                    </div>
+        
+                    <div class="tall-poster-frame relative group rounded-xl bg-space-900/80 border border-gray-800 p-1 cursor-pointer" onclick="openModal('posterModal')">
+                        <img id="projectPosterImg" src="poster.jpeg" alt="Zomoroda Project Poster" onerror="handleImageError(this)" class="w-full h-auto object-top rounded-lg group-hover:opacity-90 transition-opacity">
+                        <div class="absolute inset-0 bg-space-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-lg bg-cyan-500 text-space-900 font-bold text-xs shadow-lg">
+                                <i class="fa-solid fa-expand mr-1"></i> Expand Full Lightbox
+                            </span>
                         </div>
                     </div>
+        
+                    <p class="text-[11px] text-gray-400 text-center font-mono">
+                        <i class="fa-solid fa-circle-info text-cyan-400 mr-1"></i> Automatically loads <code class="text-cyan-300">poster.jpeg</code> from site repository.
+                    </p>
                 </div>
-
             </div>
-        </section>
-
+        </div>
+       
         <!-- OUR WINS SECTION -->
         <section id="wins" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-24">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -653,18 +648,18 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
-
+    
         <div class="flex-1 overflow-auto my-4 flex justify-center items-start">
-            <img id="modalPosterImg" src="poster.jpg" alt="Zomoroda Poster High Res" onerror="handleImageError(this)" class="max-w-full h-auto object-contain rounded-xl shadow-2xl border border-gray-800">
+            <img id="modalPosterImg" src="poster.jpeg" alt="Zomoroda Poster High Res" onerror="handleImageError(this)" class="max-w-full h-auto object-contain rounded-xl shadow-2xl border border-gray-800">
         </div>
-
+    
         <div class="text-center pt-2 border-t border-gray-800 max-w-7xl mx-auto w-full">
             <button onclick="closeModal('posterModal')" class="px-6 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white text-xs font-semibold">
                 Close Viewer
             </button>
         </div>
     </div>
-
+   
     <!-- JAVASCRIPT LOGIC -->
     <script>
         // Starfield background canvas animation
