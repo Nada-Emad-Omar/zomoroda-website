@@ -323,51 +323,51 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Card 1: Sub-10cm Threat Coverage -->
+                <!-- Card 1: Perception & Detection -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-cyan-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-cyan-400 uppercase font-bold">1. Perception & Detection</span>
+                        <span class="text-xs font-mono text-cyan-400 uppercase font-bold">1. Autonomous Vision</span>
                         <i class="fa-solid fa-crosshair text-cyan-400"></i>
                     </div>
                     <h3 class="font-tech text-lg font-bold text-white">Closes Ground Radar Blindspots</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Ground systems suffer from orbital prediction uncertainties and latency[cite: 1]. By placing optical vision directly onboard, our lightweight YOLO26n model achieves 98.9% mAP@50 to detect small debris in real time where the threat exists[cite: 1].
+                        Ground systems miss untracked, lethal debris due to tracking latency and coverage gaps. Direct onboard optical sensing uses YOLO26n (98.9% mAP@50) to detect small debris in real time where the threat exists.
                     </p>
                 </div>
 
                 <!-- Card 2: Autonomous Low Latency -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-blue-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-blue-400 uppercase font-bold">2. Real-Time Processing</span>
+                        <span class="text-xs font-mono text-blue-400 uppercase font-bold">2. Sub-Second Response</span>
                         <i class="fa-solid fa-bolt-lightning text-blue-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Autonomous Ultra-Low Latency Decision-Making</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Ultra-Low Latency Decision-Making</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Eliminates dangerous ground station communication delays[cite: 1]. Coupling 19% faster YOLO26n inference with Unscented Kalman Filtering and Clohessy–Wiltshire dynamics allows immediate onboard collision risk evaluation and maneuver triggering[cite: 1].
+                        Eliminates dangerous ground station delays. By pairing NMS-free YOLO26n with Unscented Kalman Filtering and Clohessy–Wiltshire dynamics, the system evaluates collision risks and triggers maneuvers autonomously.
                     </p>
                 </div>
 
                 <!-- Card 3: Fuel & Cost Optimization -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-purple-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-purple-400 uppercase font-bold">3. Propellant Optimization</span>
+                        <span class="text-xs font-mono text-purple-400 uppercase font-bold">3. Propellant Preservation</span>
                         <i class="fa-solid fa-gas-pump text-purple-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Zero Wasted Fuel & Maneuvers</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Zero Wasted Thruster Burns</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Unnecessary thruster burns deplete non-renewable propellant and shorten mission lifespan. UKF trajectory filtering smooths state estimation up to 2.7×, executing Δv burn commands only when strict collision probability thresholds are breached[cite: 1].
+                        False alarms drain non-renewable fuel and shorten mission lifespans. UKF trajectory filtering smooths state estimation up to 2.7×, executing Δv maneuvers only when strict collision thresholds are breached.
                     </p>
                 </div>
 
-                <!-- Card 4: Low-Cost SWaP-C Payload -->
+                <!-- Card 4: SWaP-C Payload -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-green-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-green-400 uppercase font-bold">4. SWaP-C Modular Design</span>
+                        <span class="text-xs font-mono text-green-400 uppercase font-bold">4. SWaP-C Ready</span>
                         <i class="fa-solid fa-microchip text-green-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Low-Cost Payload for Commercial CubeSats</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Plug-and-Play CubeSat Safety</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Designed for resource-constrained CubeSats, our integrated framework combines embedded edge hardware, propulsion control, and an end-to-end safety architecture to protect high-capital assets and ensure LEO sustainability[cite: 1].
+                        Engineered for resource-constrained platforms, this low-cost, modular payload integrates perception, decision logic, and actuation into a complete end-to-end safety system for satellite constellations.
                     </p>
                 </div>
             </div>
