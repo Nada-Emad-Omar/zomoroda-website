@@ -315,59 +315,59 @@
 <!-- MARKET VALUE SECTION -->
         <section id="market" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-24">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-2">
-                    <i class="fa-solid fa-earth-americas"></i> Realistic Market Need
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-2 border border-cyan-500/20">
+                    <i class="fa-solid fa-earth-americas"></i> Strategic Market Value
                 </div>
-                <h2 class="font-tech text-3xl sm:text-4xl font-bold text-white">Why Our System is Critical for Space Commercials</h2>
+                <h2 class="font-tech text-3xl sm:text-4xl font-bold text-white">Why Onboard Intelligence is Essential for Commercial Space</h2>
                 <div class="h-1 w-20 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Card 1: Faster & More Reliable Detection & Tracking -->
+                <!-- Card 1: Sub-10cm Threat Coverage -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-cyan-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-cyan-400 uppercase font-bold">1. High-Precision Vision</span>
+                        <span class="text-xs font-mono text-cyan-400 uppercase font-bold">1. Perception & Detection</span>
                         <i class="fa-solid fa-crosshair text-cyan-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Faster & More Reliable Tracking</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Closes Ground Radar Blindspots</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Ground systems often lose track of fast-moving orbital debris. By placing onboard optical cameras and dedicated computer vision pipelines directly on the satellite, our system provides continuous, high-accuracy detection and precise trajectory tracking of surrounding threats.
+                        Ground systems suffer from orbital prediction uncertainties and latency[cite: 1]. By placing optical vision directly onboard, our lightweight YOLO26n model achieves 98.9% mAP@50 to detect small debris in real time where the threat exists[cite: 1].
                     </p>
                 </div>
 
-                <!-- Card 2: Low Latency Real-Time Avoidance -->
+                <!-- Card 2: Autonomous Low Latency -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-blue-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-mono text-blue-400 uppercase font-bold">2. Real-Time Processing</span>
                         <i class="fa-solid fa-bolt-lightning text-blue-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Low-Latency Threat Evaluation</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Autonomous Ultra-Low Latency Decision-Making</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Waiting for ground station communication delays critical decision-making. Operating on lightweight edge hardware with ultra-low latency inference, the system calculates collision probabilities in real time to ensure maximum satellite safety without lag.
+                        Eliminates dangerous ground station communication delays[cite: 1]. Coupling 19% faster YOLO26n inference with Unscented Kalman Filtering and Clohessy–Wiltshire dynamics allows immediate onboard collision risk evaluation and maneuver triggering[cite: 1].
                     </p>
                 </div>
 
-                <!-- Card 3: No Waste of Maneuvers (Fuel Efficiency) -->
+                <!-- Card 3: Fuel & Cost Optimization -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-purple-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-purple-400 uppercase font-bold">3. Optimized Decision Logic</span>
+                        <span class="text-xs font-mono text-purple-400 uppercase font-bold">3. Propellant Optimization</span>
                         <i class="fa-solid fa-gas-pump text-purple-400"></i>
                     </div>
                     <h3 class="font-tech text-lg font-bold text-white">Zero Wasted Fuel & Maneuvers</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        False alarms lead to unnecessary thruster burns, draining precious fuel and shortening mission life. Our advanced estimation algorithms verify collision risks precisely, executing avoidance maneuvers only when strictly necessary to conserve propellant.
+                        Unnecessary thruster burns deplete non-renewable propellant and shorten mission lifespan. UKF trajectory filtering smooths state estimation up to 2.7×, executing Δv burn commands only when strict collision probability thresholds are breached[cite: 1].
                     </p>
                 </div>
 
-                <!-- Card 4: Global Space Situational Awareness Contribution -->
+                <!-- Card 4: Low-Cost SWaP-C Payload -->
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-l-4 border-l-green-400 hover:scale-[1.01] transition-transform">
                     <div class="flex items-center justify-between">
-                        <span class="text-xs font-mono text-green-400 uppercase font-bold">4. Space Situational Awareness</span>
-                        <i class="fa-solid fa-network-wired text-green-400"></i>
+                        <span class="text-xs font-mono text-green-400 uppercase font-bold">4. SWaP-C Modular Design</span>
+                        <i class="fa-solid fa-microchip text-green-400"></i>
                     </div>
-                    <h3 class="font-tech text-lg font-bold text-white">Contributes to Global Tracking Systems</h3>
+                    <h3 class="font-tech text-lg font-bold text-white">Low-Cost Payload for Commercial CubeSats</h3>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        Beyond protecting individual assets, onboard detection data can be downlinked to enhance global orbital debris catalogs, reinforcing safety for the broader satellite ecosystem and future commercial space missions.
+                        Designed for resource-constrained CubeSats, our integrated framework combines embedded edge hardware, propulsion control, and an end-to-end safety architecture to protect high-capital assets and ensure LEO sustainability[cite: 1].
                     </p>
                 </div>
             </div>
